@@ -64,7 +64,7 @@ $largest-breakpoint : 1007px;
 }
 
 .col-3{
-	background:blue;
+	outline:1px solid red;
 	float:left;
 	width:313px;
 	min-height:333px;
@@ -77,4 +77,20 @@ $largest-breakpoint : 1007px;
 		margin-left:2%;
 		&:first-child{ margin-left:0; }
 	}
+}
+
+.description{
+	color:#444;
+	margin:.250em 0 .357em;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.subtitle{ color:#555555; font:700 .688em/1.091em "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:1px; margin:0 0 .364em; }
+
+.smallText {
+	font: 100%/120% "source-sans-pro","Helvetica Neue",sans-serif;
 }

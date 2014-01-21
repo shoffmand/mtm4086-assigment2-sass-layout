@@ -11,13 +11,21 @@ $primary-font : "Helvetica Neue",Helvetica, Arial, sans-serif;
 $secondary-font : "Helvetica Neue", Arial, sans-serif;
 
 body{font-family: $secondary-font; }
-h1{ }
+h1{ margin: 0; font: 700 1.375em/1.136em; color: #191919;}
 h2{ font-family: $primary-font; @include font-size(22) }
+
 /* -- Banner Components -- */
 .banner{
 	height:300px;
 	background:#000;
 }
+
+/* -- Images -- */
+img{
+	width:313px;
+	/*height:170px;*/
+}
+
 
 
 /* -- Navigation components -- */
