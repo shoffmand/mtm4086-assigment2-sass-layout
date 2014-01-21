@@ -14,9 +14,10 @@ $largest-breakpoint : 1007px;
 }
 
 .mainContent{
-	position:fixed;
-	top:97px;
-	margin-top:20px;
+	/*position:fixed;
+	top:97px;margin-top:20px;*/
+	margin-top: 133px;
+	
 }
 
 .fixedPos{
@@ -25,11 +26,13 @@ $largest-breakpoint : 1007px;
 	width:100%;
 	max-height: 79px;
 	overflow:hidden;
+	z-index: 1000;
 }
 
 .fixedPos2{
 	position: fixed;
 	top:79px;
+	z-index: 1000;
 }
 
 .col-container{
