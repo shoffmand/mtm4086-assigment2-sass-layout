@@ -2,31 +2,36 @@ $largest-breakpoint : 1007px;
 
 .container{
 	margin: 0 auto;
-	border:1px solid red;
+	/*border:1px solid red;*/
 	
 	@media (min-width:$largest-breakpoint){
 		width:40em;
 	}
 	
 	@media (min-width: $largest-breakpoint){
-		width:55em;	
+		width:61em;	
 	}
 }
 
 .mainContent{
 	/*position:fixed;
 	top:97px;margin-top:20px;*/
-	margin-top: 133px;
+	margin-top: 73px;
 	
 }
 
 .fixedPos{
+	padding:10px;
 	position:fixed;
 	top:0;
 	width:100%;
-	max-height: 79px;
+	max-height: 54px;
 	overflow:hidden;
 	z-index: 1000;
+	-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+	border-bottom-width: 0;
+	background-color:$backgroundc;
 }
 
 .fixedPos2{
@@ -39,11 +44,20 @@ $largest-breakpoint : 1007px;
 	@include clearfix;
 	
 }
+
+.border{
+	margin-bottom:10px;
+	border-bottom: $borderstyle;
+}
+.containerofarticle{
+	border-left: $borderstyle;
+	padding-left:8%;
+}
 .col{
 	margin-top:1em;
 	padding-top:1em;
-	border-top:1px solid blue;
-	min-height:200px;
+	/*border-top:1px solid blue;*/
+	/*min-height:200px;*/
 	&:first-child{ margin-top:0; padding-top:0; border:none; }
 	
 	@media (min-width:$largest-breakpoint){
@@ -54,23 +68,23 @@ $largest-breakpoint : 1007px;
 	}
 }
 
-.col-1{ background:purple; width:100%; }
+.col-1{ background:$backgroundc; width:100%; border-bottom: $borderstyle;}
 
 .col-2{
 	
-	background:orange;
+	background:$backgroundc;
 	@media (min-width:$largest-breakpoint){
-		width:48.75%;
+		width:66%;
 		margin-left:2.5%;
 		&:first-child{ margin-left:0; }
 	}
 }
 
 .col-3{
-	outline:1px solid red;
+	/*outline:1px solid red;*/
 	float:left;
 	width:313px;
-	min-height:333px;
+	/*min-height:333px;*/
 	margin:0;
 	/*padding:17px 17px 34px;*/
 	position: relative;
@@ -86,14 +100,26 @@ $largest-breakpoint : 1007px;
 	color:#444;
 	margin:.250em 0 .357em;
 	display: block;
+	padding-bottom: 80px;
 	-webkit-margin-before: 1em;
 	-webkit-margin-after: 1em;
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;
 }
 
-.subtitle{ color:#555555; font:700 .688em/1.091em "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:1px; margin:0 0 .364em; }
+.subtitle{ color:#555555; font: $primary-font; font-weight:bold; letter-spacing:1px; margin:0 0 .364em; @include font-size(8)}
 
 .smallText {
-	font: 100%/120% "source-sans-pro","Helvetica Neue",sans-serif;
+	margin:0 0 0.5em;
+	font: $primary-font; @include font-size(8)
 }
+
+.changestyle{
+	float:none;
+}
+
+.float{
+	float:left;
+	max-width:30%;
+}
+
