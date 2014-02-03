@@ -9,7 +9,7 @@ Syntax error: Undefined variable: "$link-colour".
 6: 	li:first-child{ padding-left: 90px; margin-top:0;}
 7: 	a{ display:block; color:$link-colour; text-decoration:none; font:$secondary-font; padding:1em; text-align:center; text-transform:uppercase; }
 8: 	a:first-child{ }
-9: 	a:hover{color:#0093cc;}
+9: 	a:hover{color:$link-hover;}
 10: 	@media (min-width:40em){
 11: 		ul { @include clearfix; }
 12: 		li { float:left; margin-left:1em; margin-top:0; }
@@ -70,4 +70,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$link-colour\".\A         on line 7 of scss/navigation.scss\A \A 2: 	float:left;\A 3: 	ul{ padding:0; margin:0; }\A 4: 	\A 5: 	li{ margin-top:1em; list-style:none; }\A 6: 	li:first-child{ padding-left: 90px; margin-top:0;}\A 7: 	a{ display:block; color:$link-colour; text-decoration:none; font:$secondary-font; padding:1em; text-align:center; text-transform:uppercase; }\A 8: 	a:first-child{ }\A 9: 	a:hover{color:#0093cc;}\A 10: 	@media (min-width:40em){\A 11: 		ul { @include clearfix; }\A 12: 		li { float:left; margin-left:1em; margin-top:0; }"; }
+  content: "Syntax error: Undefined variable: \"$link-colour\".\A         on line 7 of scss/navigation.scss\A \A 2: 	float:left;\A 3: 	ul{ padding:0; margin:0; }\A 4: 	\A 5: 	li{ margin-top:1em; list-style:none; }\A 6: 	li:first-child{ padding-left: 90px; margin-top:0;}\A 7: 	a{ display:block; color:$link-colour; text-decoration:none; font:$secondary-font; padding:1em; text-align:center; text-transform:uppercase; }\A 8: 	a:first-child{ }\A 9: 	a:hover{color:$link-hover;}\A 10: 	@media (min-width:40em){\A 11: 		ul { @include clearfix; }\A 12: 		li { float:left; margin-left:1em; margin-top:0; }"; }

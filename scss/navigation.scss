@@ -6,7 +6,7 @@
 	li:first-child{ padding-left: 90px; margin-top:0;}
 	a{ display:block; color:$link-colour; text-decoration:none; font:$secondary-font; padding:1em; text-align:center; text-transform:uppercase; }
 	a:first-child{ }
-	a:hover{color:#0093cc;}
+	a:hover{color:$link-hover;}
 	@media (min-width:40em){
 		ul { @include clearfix; }
 		li { float:left; margin-left:1em; margin-top:0; }
@@ -24,7 +24,7 @@
 	li:last-child{ padding-right: 150px; margin-top:0;}
 	a{ display:block; color:$link-colour; text-decoration:none; font:$secondary-font; padding:1em; text-align:center; @include font-size(9) }
 	a:first-child{ }
-	a:hover{color:#0093cc;}
+	a:hover{color:$link-hover;}
 	@media (min-width:40em){
 		ul { @include clearfix; }
 		li { float:left; margin-left:1em; margin-top:0; }
