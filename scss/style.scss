@@ -26,8 +26,14 @@ $subfont-colour : #555555;
 
 body{font-family: $secondary-font; }
 h1{ margin: 0; font: $primary-font; color:$headerfont-colour; @include font-size(22)}
-h2{ margin: 0; font-family: $primary-font; @include font-size(17) }
+h1:hover{
+			color:$link-hover;
+			cursor:pointer;
+		}
+h2{ margin: 0; font-family: $primary-font; @include font-size(17)}
+h2:hover{ color:$link-hover; cursor:pointer;}
 h3{ margin: 0; font-family: $primary-font; @include font-size(13) }
+h3:hover{ color:$link-hover; cursor:pointer;}
 h4{ margin: 1em 0 1em 0; font-family: $primary-font; font-weight:100; @include font-size(11) }
 /* -- Banner Components -- */
 .banner{
