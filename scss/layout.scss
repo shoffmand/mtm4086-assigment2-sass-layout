@@ -28,8 +28,8 @@ $largest-breakpoint : 1007px;
 	max-height: 54px;
 	overflow:hidden;
 	z-index: 1000;
-	-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
-	box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+	-webkit-box-shadow: $boxshadow;
+	box-shadow: $boxshadow;
 	border-bottom-width: 0;
 	background-color:$backgroundc;
 }
@@ -56,6 +56,7 @@ $largest-breakpoint : 1007px;
 .col{
 	margin-top:1em;
 	padding-top:1em;
+	
 	/*border-top:1px solid blue;*/
 	/*min-height:200px;*/
 	&:first-child{ margin-top:0; padding-top:0; border:none; }
@@ -88,7 +89,7 @@ $largest-breakpoint : 1007px;
 	margin:0;
 	/*padding:17px 17px 34px;*/
 	position: relative;
-	
+	padding-bottom: 80px;
 	@media (min-width:$largest-breakpoint){
 		width:32%;
 		margin-left:2%;
@@ -97,17 +98,17 @@ $largest-breakpoint : 1007px;
 }
 
 .description{
-	color:#444;
+	color:$desfont-colour;
 	margin:.250em 0 .357em;
 	display: block;
-	padding-bottom: 80px;
+	
 	-webkit-margin-before: 1em;
 	-webkit-margin-after: 1em;
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;
 }
 
-.subtitle{ color:#555555; font: $primary-font; font-weight:bold; letter-spacing:1px; margin:0 0 .364em; @include font-size(8)}
+.subtitle{ color:$subfont-colour; font: $primary-font; font-weight:bold; letter-spacing:1px; margin:0 0 .364em; @include font-size(8)}
 
 .smallText {
 	margin:0 0 0.5em;

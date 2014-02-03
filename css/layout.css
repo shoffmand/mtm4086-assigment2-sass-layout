@@ -1,21 +1,21 @@
 /*
-Syntax error: Undefined variable: "$backgroundc".
-        on line 34 of scss/layout.scss
+Syntax error: Undefined variable: "$boxshadow".
+        on line 31 of scss/layout.scss
 
+26: 	top:0;
+27: 	width:100%;
+28: 	max-height: 54px;
 29: 	overflow:hidden;
 30: 	z-index: 1000;
-31: 	-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
-32: 	box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+31: 	-webkit-box-shadow: $boxshadow;
+32: 	box-shadow: $boxshadow;
 33: 	border-bottom-width: 0;
 34: 	background-color:$backgroundc;
 35: }
 36: 
-37: .fixedPos2{
-38: 	position: fixed;
-39: 	top:79px;
 
 Backtrace:
-scss/layout.scss:34
+scss/layout.scss:31
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -60,4 +60,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$backgroundc\".\A         on line 34 of scss/layout.scss\A \A 29: 	overflow:hidden;\A 30: 	z-index: 1000;\A 31: 	-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);\A 32: 	box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);\A 33: 	border-bottom-width: 0;\A 34: 	background-color:$backgroundc;\A 35: }\A 36: \A 37: .fixedPos2{\A 38: 	position: fixed;\A 39: 	top:79px;"; }
+  content: "Syntax error: Undefined variable: \"$boxshadow\".\A         on line 31 of scss/layout.scss\A \A 26: 	top:0;\A 27: 	width:100%;\A 28: 	max-height: 54px;\A 29: 	overflow:hidden;\A 30: 	z-index: 1000;\A 31: 	-webkit-box-shadow: $boxshadow;\A 32: 	box-shadow: $boxshadow;\A 33: 	border-bottom-width: 0;\A 34: 	background-color:$backgroundc;\A 35: }\A 36: "; }
